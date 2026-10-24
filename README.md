@@ -1,8 +1,8 @@
-# NIXOS
+# NixOS
 
 ## Installation
 
-Boot from USB-stick with Nixos-minimal. Change host.
+Boot from USB-stick with NixOS-minimal. Change host.
 Internet via nmtui or LAN cable, then:
 
 ```bash
@@ -24,7 +24,7 @@ mount -o umask=077 /dev/disk/by-label/boot /mnt/boot
 swapon /dev/nvme0n1p2
 lsblk -f
 
-nixos-install --flake github:julsen7/nixos#HOST --root /mnt
+nixos-install --flake github:julsen7/NixOS#HOST --root /mnt
 ```
 
 ## Other information
