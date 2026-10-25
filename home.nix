@@ -518,6 +518,9 @@ in {
     # libreoffice-stable
     # audacity
     # lmms
+    # jetbrains.idea
+    # jetbrains.clion
+    # jetbrains.pycharm
 
     btop
     wiremix
@@ -534,19 +537,12 @@ in {
     # wl-clipboard
     # nvtopPackages.full
     
-    # gcc
-    # gdb
+    jdk
+    # stdenv
     # cmake
-    # gnumake
-    # jdk
-    # python3
-    # uv
-    # rustc
+    # ninja
     # cargo
-    # clippy
-    # rustfmt
-    # jetbrains.idea
-    # jetbrains.clion
-    # jetbrains.pycharm
+    # rustc
+    # python3
   ];
 }
