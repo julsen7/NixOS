@@ -65,7 +65,7 @@
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
   hardware.nvidia.modesetting.enable = true;
-  hardware.nvidia.open = true;
+  hardware.nvidia.open = false;
   hardware.nvidia.prime.offload.enable = true;
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
   hardware.nvidia.prime.amdgpuBusId = "PCI:5@0:0:0";
