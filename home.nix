@@ -513,7 +513,7 @@ in {
     # krita
     davinci-resolve
     easyeffects
-    # prismlauncher
+    prismlauncher
     heroic
     # libreoffice-stable
     # audacity
