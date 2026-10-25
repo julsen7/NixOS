@@ -513,7 +513,7 @@ in {
     # krita
     davinci-resolve
     easyeffects
-    prismlauncher
+    # prismlauncher
     heroic
     # libreoffice-stable
     # audacity
@@ -537,7 +537,7 @@ in {
     # wl-clipboard
     # nvtopPackages.full
     
-    jdk
+    # jdk
     # stdenv
     # cmake
     # ninja
