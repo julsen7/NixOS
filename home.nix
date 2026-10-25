@@ -344,8 +344,9 @@ in {
         substitutions = {
           "Documents" = "󰈙 Documents";
           "Downloads" = " Downloads";
-          "Music" = " Music";
-          "Pictures" = " Pictures";
+          "Pictures" = "󰋩 Pictures";
+          "Repos" = "󱑢 Repos";
+          "Server" = " Server";
         };
       };
       git_branch = {
