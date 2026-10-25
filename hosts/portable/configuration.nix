@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, options, ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];
@@ -7,14 +7,12 @@
   # USER
   users.users.julsen = {
     isNormalUser = true;
-    home = "/home/julsen";
-    description = "Julsen";
     extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
     shell = pkgs.zsh;
     hashedPassword = "$y$j9T$n8yEDLyG5/IORRV5SPJ5I.$KEdyBgQbDYMSWWxeZYgW/NpdKltwuBk7RZU7ydNzb5.";
-    openssh.authorizedKeys.keys = [ "ssh-dss AAAAB3Nza... alice@foobar" ];
   };
 
+  # BINARIES
   programs.nix-ld = {
     enable = true;
     libraries = options.programs.nix-ld.libraries.default;
@@ -26,6 +24,7 @@
 
   # LOCALIZATION
   time.timeZone = "Europe/Berlin";
+  i18n.defaultLocale = "de_DE.UTF-8";
   services.xserver.xkb.layout = "de";
   services.xserver.xkb.options = "eurosign:e";
   console.useXkbConfig = true;
@@ -83,7 +82,6 @@
   services.udisks2.enable = true;
   services.fwupd.enable = true;
   services.gnome.gnome-keyring.enable = true;
-  security.pam.services.login.enableGnomeKeyring = true; # für freischalten ohne einloggen
   services.power-profiles-daemon.enable = true;
   services.mysql.enable = true;
   services.mysql.package = pkgs.mariadb;
@@ -109,6 +107,22 @@
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
+  };
+
+  # FONTS
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+      noto-fonts
+      noto-fonts-color-emoji
+    ];
+    fontconfig.defaultFonts = {
+      monospace = [ "JetBrainsMono Nerd Font" ];
+      sansSerif = [ "Noto Sans" ];
+      serif = [ "Noto Serif" ];
+      emoji = [ "Noto Color Emoji" ];
+    };
   };
 
   # NIXOS

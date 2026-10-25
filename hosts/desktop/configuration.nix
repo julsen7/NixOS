@@ -65,7 +65,7 @@
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
   hardware.nvidia.modesetting.enable = true;
-  hardware.nvidia.open = false;
+  hardware.nvidia.open = true;
   hardware.nvidia.prime.offload.enable = true;
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
   hardware.nvidia.prime.amdgpuBusId = "PCI:5@0:0:0";
@@ -82,7 +82,6 @@
   services.udisks2.enable = true;
   services.fwupd.enable = true;
   services.gnome.gnome-keyring.enable = true;
-  security.pam.services.login.enableGnomeKeyring = true; # für freischalten ohne einloggen
   services.power-profiles-daemon.enable = true;
   services.mysql.enable = true;
   services.mysql.package = pkgs.mariadb;
