@@ -91,8 +91,8 @@
       wayland.enable = true;
     };
     defaultSession = "hyprland-uwsm";
-    autoLogin.enable = true;
-    autoLogin.user = "julsen";
+    # autoLogin.enable = true;
+    # autoLogin.user = "julsen";
   };
 
   # PROGRAMS
