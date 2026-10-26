@@ -61,11 +61,13 @@
   # HARDWARE & GRAPHICS
   zramSwap.enable = true;
   hardware.enableRedistributableFirmware = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
   hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia.powerManagement.enable = false;
   hardware.nvidia.open = true;
+  hardware.nvidia.nvidiaSettings = true;
   hardware.nvidia.prime.offload.enable = true;
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
   hardware.nvidia.prime.amdgpuBusId = "PCI:5@0:0:0";
