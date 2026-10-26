@@ -37,7 +37,7 @@ in {
   xdg.enable = true;
   xdg.configFile = {
     "quickshell".source = ./assets/quickshell;
-    # "obs-studio/basic".source = ./assets/obs-studio/basic;
+    "obs-studio/basic".source = ./assets/obs-studio/basic;
   };
   home.file = {
     "wallpaper".source = ./wallpaper;
