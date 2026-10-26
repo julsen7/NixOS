@@ -510,7 +510,7 @@ in {
     thunar
     discord
     pinta
-    # krita
+    krita
     davinci-resolve
     easyeffects
     prismlauncher
