@@ -41,7 +41,7 @@ in {
   };
   xdg.desktopEntries."com.obsproject.Studio" = {
     name = "OBS Studio";
-    exec = "nvidia-offload obs -platform xcb";
+    exec = "nvidia-offload OBS_USE_EGL=1 obs --platform xcb";
     icon = "com.obsproject.Studio";
     comment = "Free and open source software for video recording and live streaming";
     categories = [ "AudioVideo" "Recorder" ];
