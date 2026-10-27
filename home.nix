@@ -39,6 +39,14 @@ in {
     "quickshell".source = ./assets/quickshell;
     # "obs-studio/basic".source = ./assets/obs-studio/basic;
   };
+  xdg.desktopEntries.obs = {
+    name = "OBS Studio (Nvidia Offload)";
+    exec = "nvidia-offload obs";
+    icon = "com.obsproject.Studio";
+    comment = "Free and open source software for video recording and live streaming";
+    categories = [ "AudioVideo" "Recorder" ];
+    terminal = false;
+  };
   home.file = {
     "wallpaper".source = ./wallpaper;
   };
