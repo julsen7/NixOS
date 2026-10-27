@@ -37,11 +37,11 @@ in {
   xdg.enable = true;
   xdg.configFile = {
     "quickshell".source = ./assets/quickshell;
-    # "obs-studio/basic".source = ./assets/obs-studio/basic;
+    "obs-studio/basic".source = ./assets/obs-studio/basic;
   };
   xdg.desktopEntries."com.obsproject.Studio" = {
     name = "OBS Studio";
-    exec = "nvidia-offload OBS_USE_EGL=1 obs --platform xcb";
+    exec = "nvidia-offload obs";
     icon = "com.obsproject.Studio";
     comment = "Free and open source software for video recording and live streaming";
     categories = [ "AudioVideo" "Recorder" ];
@@ -452,36 +452,36 @@ in {
         eamodio.gitlens
         github.github-vscode-theme
         jnoortheen.nix-ide
-        ms-python.debugpy
-        ms-python.python
-        ms-python.vscode-pylance
-        ms-python.vscode-python-envs
-        ms-vscode.cmake-tools
-        ms-vscode.cpptools
-        ms-vscode.cpptools-extension-pack
+        # ms-python.debugpy
+        # ms-python.python
+        # ms-python.vscode-pylance
+        # ms-python.vscode-python-envs
+        # ms-vscode.cmake-tools
+        # ms-vscode.cpptools
+        # ms-vscode.cpptools-extension-pack
         pkief.material-icon-theme
-        redhat.java
-        rust-lang.rust-analyzer
+        # redhat.java
+        # rust-lang.rust-analyzer
         tomoki1207.pdf
-        vscjava.vscode-gradle
-        vscjava.vscode-java-debug
-        vscjava.vscode-java-dependency
-        vscjava.vscode-java-pack
-        vscjava.vscode-java-test
-        vscjava.vscode-maven
-      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-        {
-          name = "cpp-devtools";
-          publisher = "ms-vscode";
-          version = "0.6.18";
-          sha256 = "sha256-5eq0m1jOyYzN8JCJWHWQFdkt1OzvBcO9P7cQ5dY7DoA=";
-        }
-        {
-          name = "cpptools-themes";
-          publisher = "ms-vscode";
-          version = "2.0.0";
-          sha256 = "sha256-YWA5UsA+cgvI66uB9d9smwghmsqf3vZPFNpSCK+DJxc=";
-        }
+        # vscjava.vscode-gradle
+        # vscjava.vscode-java-debug
+        # vscjava.vscode-java-dependency
+        # vscjava.vscode-java-pack
+        # vscjava.vscode-java-test
+        # vscjava.vscode-maven
+      # ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      #   {
+      #     name = "cpp-devtools";
+      #     publisher = "ms-vscode";
+      #     version = "0.6.18";
+      #     sha256 = "sha256-5eq0m1jOyYzN8JCJWHWQFdkt1OzvBcO9P7cQ5dY7DoA=";
+      #   }
+      #   {
+      #     name = "cpptools-themes";
+      #     publisher = "ms-vscode";
+      #     version = "2.0.0";
+      #     sha256 = "sha256-YWA5UsA+cgvI66uB9d9smwghmsqf3vZPFNpSCK+DJxc=";
+      #   }
        ];
     };
   };
