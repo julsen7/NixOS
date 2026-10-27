@@ -38,6 +38,7 @@ in {
   xdg.configFile = {
     "quickshell".source = ./assets/quickshell;
     "obs-studio/basic".source = ./assets/obs-studio/basic;
+    "obs-studio/user.ini".source = ./assets/obs-studio/user.ini;
   };
   xdg.desktopEntries."com.obsproject.Studio" = {
     name = "OBS Studio";
