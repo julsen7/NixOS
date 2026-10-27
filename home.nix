@@ -39,7 +39,7 @@ in {
     "quickshell".source = ./assets/quickshell;
     # "obs-studio/basic".source = ./assets/obs-studio/basic;
   };
-  xdg.desktopEntries.obs = {
+  xdg.desktopEntries."com.obsproject.Studio" = {
     name = "OBS Studio (Nvidia Offload)";
     exec = "nvidia-offload obs";
     icon = "com.obsproject.Studio";
