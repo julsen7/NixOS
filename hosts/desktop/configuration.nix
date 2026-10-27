@@ -56,18 +56,21 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    extraConfig.pipewire."92-clock" = {
+      "context.properties" = {
+        "default.clock.rate" = 48000;
+      };
+    };
   };
 
   # HARDWARE & GRAPHICS
   zramSwap.enable = true;
   hardware.enableRedistributableFirmware = true;
-  services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
+  services.xserver.videoDrivers = [ "nvidia" ];
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
   hardware.nvidia.modesetting.enable = true;
-  hardware.nvidia.powerManagement.enable = false;
   hardware.nvidia.open = true;
-  hardware.nvidia.nvidiaSettings = true;
   hardware.nvidia.prime.offload.enable = true;
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
   hardware.nvidia.prime.amdgpuBusId = "PCI:5@0:0:0";

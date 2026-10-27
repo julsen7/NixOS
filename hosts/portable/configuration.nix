@@ -56,6 +56,11 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    extraConfig.pipewire."92-clock" = {
+      "context.properties" = {
+        "default.clock.rate" = 48000;
+      };
+    };
   };
 
   # HARDWARE & GRAPHICS
