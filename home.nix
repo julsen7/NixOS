@@ -500,6 +500,7 @@ in {
 
   services.easyeffects = {
     enable = true;
+    preset = "default";
     extraPresets = {
       "default" = {
         input = {
