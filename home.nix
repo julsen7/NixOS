@@ -449,9 +449,11 @@ in {
         "workbench.startupEditor" = "none";
       };
       extensions = with pkgs.vscode-extensions; [
-        davidanson.vscode-markdownlint
-        eamodio.gitlens
         github.github-vscode-theme
+        pkief.material-icon-theme
+        eamodio.gitlens
+        davidanson.vscode-markdownlint
+        tomoki1207.pdf
         jnoortheen.nix-ide
         # ms-python.debugpy
         # ms-python.python
@@ -460,16 +462,14 @@ in {
         # ms-vscode.cmake-tools
         # ms-vscode.cpptools
         # ms-vscode.cpptools-extension-pack
-        pkief.material-icon-theme
-        # redhat.java
         # rust-lang.rust-analyzer
-        tomoki1207.pdf
         # vscjava.vscode-gradle
         # vscjava.vscode-java-debug
         # vscjava.vscode-java-dependency
         # vscjava.vscode-java-pack
         # vscjava.vscode-java-test
         # vscjava.vscode-maven
+        # redhat.java
       # ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       #   {
       #     name = "cpp-devtools";
