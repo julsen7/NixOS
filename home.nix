@@ -821,7 +821,7 @@ in {
     # wl-clipboard
     # nvtopPackages.full
     
-    # jdk
+    jdk
     # stdenv
     # cmake
     # ninja
