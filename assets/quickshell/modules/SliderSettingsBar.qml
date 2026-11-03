@@ -27,7 +27,7 @@ Rectangle {
         "fallback": "",
         "kitty": "",
         "zen": "",
-        "codium": "󰨞",
+        "code": "󰨞",
         "spotify": "",
         "discord": "",
         "obsidian": "",
