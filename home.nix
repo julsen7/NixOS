@@ -455,34 +455,34 @@ in {
         davidanson.vscode-markdownlint
         tomoki1207.pdf
         jnoortheen.nix-ide
-        # ms-python.debugpy
-        # ms-python.python
-        # ms-python.vscode-pylance
-        # ms-python.vscode-python-envs
-        # ms-vscode.cmake-tools
-        # ms-vscode.cpptools
-        # ms-vscode.cpptools-extension-pack
-        # rust-lang.rust-analyzer
-        # vscjava.vscode-gradle
-        # vscjava.vscode-java-debug
-        # vscjava.vscode-java-dependency
-        # vscjava.vscode-java-pack
-        # vscjava.vscode-java-test
-        # vscjava.vscode-maven
-        # redhat.java
-      # ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-      #   {
-      #     name = "cpp-devtools";
-      #     publisher = "ms-vscode";
-      #     version = "0.6.18";
-      #     sha256 = "sha256-5eq0m1jOyYzN8JCJWHWQFdkt1OzvBcO9P7cQ5dY7DoA=";
-      #   }
-      #   {
-      #     name = "cpptools-themes";
-      #     publisher = "ms-vscode";
-      #     version = "2.0.0";
-      #     sha256 = "sha256-YWA5UsA+cgvI66uB9d9smwghmsqf3vZPFNpSCK+DJxc=";
-      #   }
+        ms-python.debugpy
+        ms-python.python
+        ms-python.vscode-pylance
+        ms-python.vscode-python-envs
+        ms-vscode.cmake-tools
+        ms-vscode.cpptools
+        ms-vscode.cpptools-extension-pack
+        rust-lang.rust-analyzer
+        vscjava.vscode-gradle
+        vscjava.vscode-java-debug
+        vscjava.vscode-java-dependency
+        vscjava.vscode-java-pack
+        vscjava.vscode-java-test
+        vscjava.vscode-maven
+        redhat.java
+      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        {
+          name = "cpp-devtools";
+          publisher = "ms-vscode";
+          version = "0.6.18";
+          sha256 = "sha256-5eq0m1jOyYzN8JCJWHWQFdkt1OzvBcO9P7cQ5dY7DoA=";
+        }
+        {
+          name = "cpptools-themes";
+          publisher = "ms-vscode";
+          version = "2.0.0";
+          sha256 = "sha256-YWA5UsA+cgvI66uB9d9smwghmsqf3vZPFNpSCK+DJxc=";
+        }
        ];
     };
   };
