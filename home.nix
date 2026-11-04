@@ -224,10 +224,6 @@ in {
 
   programs.kitty = {
     enable = true;
-    # font = {
-    #   name = "JetBrainsMono Nerd Font";
-    #   size = 12;
-    # };
     settings = {
       # blue
       # color0 = "#100a19";
@@ -808,7 +804,7 @@ in {
 
     btop
     wiremix
-    bluetui
+    bluetuiw
     _7zz
     openconnect
     hyprshot
