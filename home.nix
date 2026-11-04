@@ -804,7 +804,7 @@ in {
 
     btop
     wiremix
-    bluetuiw
+    bluetui
     _7zz
     openconnect
     hyprshot
