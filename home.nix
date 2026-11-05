@@ -807,6 +807,7 @@ in {
     bluetui
     _7zz
     openconnect
+    remmina
     hyprshot
     hyprpicker
     brightnessctl
