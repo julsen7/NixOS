@@ -785,6 +785,30 @@ in {
     colorScheme = "UltraBlack";
   };
 
+  programs.mangohud = {
+    enable = true;
+    settings = {
+      fps = true;
+      frametime = true;
+      frame_timing = 1;
+      fps_metrics = "avg,0.01";
+      cpu_stats = true;
+      cpu_mhz = true;
+      cpu_temp = true;
+      core_load = true;
+      gpu_stats = true;
+      gpu_temp = true;
+      position = "top-left";
+      font_size = 20;
+      background_alpha = 0.3;
+      output_folder = "/home/julsen/mangologs";
+      log_duration = 60;
+      log_interval = 0;
+      toggle_hud = "Shift_R+F12";
+      toggle_logging = "Shift_L+F2";
+    };
+  };
+
   home.packages = with pkgs; [
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
