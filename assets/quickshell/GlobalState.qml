@@ -1,11 +1,9 @@
 pragma Singleton
 
 import QtQuick
-import Quickshell
-import "services"
 
-Singleton {
-    readonly property string currentWallpaper: WallpaperService.currentWallpaper
+QtObject {
+    property string currentWallpaper: "file:///home/julsen/wallpaper/Mountain4.jpg"
     property bool isLocked: false
     property bool isSettingsOpen: false
     property int settingsTab: 0

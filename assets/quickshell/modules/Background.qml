@@ -49,13 +49,6 @@ Scope {
 
                     asynchronous: true
                     visible: false
-
-                    onStatusChanged: {
-                        if (status === Image.Error && source !== WallpaperService.defaultWallpaper) {
-                            console.warn("Wallpaper konnte nicht geladen werden, nutze Fallback:", source);
-                            WallpaperService.fallbackToDefault();
-                        }
-                    }
                 }
 
                 MultiEffect {

@@ -2,8 +2,6 @@
 
 let
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-  wallpaperDir = "${./assets/wallpaper}";
-  defaultWallpaper = "${wallpaperDir}/Mountain4.jpg";
 in {
   imports = [ inputs.spicetify-nix.homeManagerModules.spicetify ];
 
@@ -50,12 +48,8 @@ in {
     categories = [ "AudioVideo" "Recorder" ];
     terminal = false;
   };
-  # home.file = {
-  #   "wallpaper".source = ./wallpaper;
-  # };
-  home.sessionVariables = {
-    QS_WALLPAPER_DIR = wallpaperDir;
-    QS_DEFAULT_WALLPAPER = defaultWallpaper;
+  home.file = {
+    "wallpaper".source = ./wallpaper;
   };
   services.hyprpolkitagent.enable = true;
 
