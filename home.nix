@@ -50,9 +50,9 @@ in {
     categories = [ "AudioVideo" "Recorder" ];
     terminal = false;
   };
-  home.file = {
-    "wallpaper".source = ./wallpaper;
-  };
+  # home.file = {
+  #   "wallpaper".source = ./wallpaper;
+  # };
   home.sessionVariables = {
     QS_WALLPAPER_DIR = wallpaperDir;
     QS_DEFAULT_WALLPAPER = defaultWallpaper;
