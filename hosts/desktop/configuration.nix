@@ -114,6 +114,7 @@
     localNetworkGameTransfers.openFirewall = true;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
   };
+  programs.gamescope.enable = true;
 
   # FONTS
   fonts = {
