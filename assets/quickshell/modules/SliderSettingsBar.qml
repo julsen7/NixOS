@@ -41,7 +41,8 @@ Rectangle {
         "minecraft": "󰍳",
         "youtube": "",
         "twitch": "",
-        "github": "󰊫",
+        "github": "",
+        "gmail": "󰊫",
         "moodle": ""
     }
 

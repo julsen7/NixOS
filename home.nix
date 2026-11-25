@@ -123,6 +123,15 @@ in {
         input = {
           kb_layout = "de",
         },
+        xwayland = {
+          force_zero_scaling = true,
+        },
+        render = {
+          direct_scanout = 0,
+        },
+        misc = {
+          vrr = 0,
+        },
       })
 
       -- Keybinds

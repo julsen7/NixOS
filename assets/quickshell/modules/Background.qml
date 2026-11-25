@@ -57,15 +57,9 @@ Scope {
                     source: wallpaper
                     maskEnabled: true
                     maskSource: maskSource
-
                     opacity: wallpaper.status === Image.Ready ? 1 : 0
 
-                    Behavior on opacity {
-                        NumberAnimation { 
-                            duration: 400 
-                            easing.type: Easing.InOutQuad 
-                        }
-                    }
+                    Behavior on opacity { NumberAnimation { duration: 250; easing.type: Easing.OutQuart } }
                 }
             }
         }

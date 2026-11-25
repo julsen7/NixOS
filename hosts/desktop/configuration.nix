@@ -113,6 +113,8 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
+  programs.gamescope.enable = true;
+  programs.steam.gamescopeSession.enable = true; # optional
 
   # FONTS
   fonts = {
